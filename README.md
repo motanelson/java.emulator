@@ -1,2 +1,1 @@
-# pt.gui.editor
-portugal pt editor gui corrector
+script java to jbat files
