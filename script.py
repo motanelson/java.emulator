@@ -1,8 +1,11 @@
 import os
 import copy
-print("\033c\033[47;31m\ngive me file jbat: ? \n")
+print("\033c\033[47;31m\ngive me file .class: ? \n")
 a=input().strip()
-f1=open(a,"r")
+rrr=a.replace(".class","")
+ttt="javap -c -private $1 > /tmp/$2.jbat".replace("$1",a).replace("$2",rrr)
+os.system(ttt)
+f1=open("/tmp/$2.jbat".replace("$2",rrr),"r")
 bodys=f1.read()
 f1.close()
 
