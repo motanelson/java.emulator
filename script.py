@@ -1,6 +1,6 @@
 import os
 import copy
-print("\033c\033[47;31m\ngive me file .class: ? \n")
+print("\033c\033[45;36m\ngive me file .class: ? \n")
 a=input().strip()
 rrr=a.replace(".class","")
 ttt="/usr/bin/openjdk-asmtools-jdis $1 -w /tmp/".replace("$1",a)
